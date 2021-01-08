@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Library</title>
+</head>
+<body>
+  <h1 class="primary">Reading List</h1>
+  <button id="new-book-btn">New Book</button>
+  <div class="popup" hidden>
+    <div id="popup-bg">
+      <div id="form-bg">
+        <h2>Enter New Book Info</h2>
+        <form id="new-book">
+          <label for="title">Title</label>
+          <input id="title" name="title" type="text" required>
+          <label for="author">Author</label>
+          <input id="author" type="text" required>
+          <label for="pages">Pages</label>
+          <input id="pages" type="number" min="1" required>
+          <div >
+            <label for="read">Read</label>
+            <input id="read" type="checkbox">
+          </div>
+          <input id="new-book-submit" type="submit" value="Submit">
+          <input id="cancel" type="button" value="Cancel">
+        </form>
+      </div>
+    </div>
+  </div>
+  <table id="table" class="table">
+    <tr id="header-row">
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Pages</th>
+      <th scope="col">Read</th>
+      <th></th>
+    </tr>
+  </table>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCr8yzy9Gu64BlPv4jWP5h8YJIOjoruJpE",
+    authDomain: "reading-list-56057.firebaseapp.com",
+    projectId: "reading-list-56057",
+    storageBucket: "reading-list-56057.appspot.com",
+    messagingSenderId: "54204879327",
+    appId: "1:54204879327:web:ff706ae971082a9279f46a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

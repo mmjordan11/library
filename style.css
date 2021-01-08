@@ -1,0 +1,56 @@
+table, th, td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+body {
+  margin: 5% 10%;
+}
+
+table {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#popup-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.4);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index:100
+}
+
+#form-bg {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10%;
+  width: 50vw;
+}
+
+.inline {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#new-book-btn {
+  margin-bottom: 10px;
+}
